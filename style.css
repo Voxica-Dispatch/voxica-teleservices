@@ -133,3 +133,39 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
 .btn:hover{transform:translateY(-2px)}
 .footer a:not(.brand):hover{text-decoration:underline;text-underline-offset:4px}
 @media(prefers-reduced-motion:reduce){.audience-card,.service-card,.btn{transition:none!important;transform:none!important}}
+
+
+/* Voxica signature visual system */
+.nav{background:#120d0b!important;border-bottom:1px solid #5b4126!important}
+.nav .brand img{width:86px!important;height:86px!important;aspect-ratio:1!important;object-fit:contain!important;filter:none!important}
+.footer .brand img{width:145px!important;height:145px!important;object-fit:contain!important}
+.new-hero{position:relative;overflow:hidden;background:radial-gradient(ellipse at 70% 20%,#4c3020 0%,transparent 42%),linear-gradient(125deg,#110c0a 0%,#25170f 55%,#110d0b 100%)!important;padding:94px 0 105px!important}
+.new-hero:before{content:"";position:absolute;inset:0;opacity:.11;background-image:linear-gradient(90deg,#d8aa62 1px,transparent 1px),linear-gradient(#d8aa62 1px,transparent 1px);background-size:90px 90px;mask-image:linear-gradient(90deg,transparent 20%,black 100%);pointer-events:none}
+.new-hero .container{position:relative;z-index:1}
+.new-hero h1{font-size:clamp(3.2rem,5.3vw,5.8rem)!important;line-height:1.07;letter-spacing:-.065em!important;color:#fff9ee!important}
+.new-hero .gold-text{color:#eec16b!important}
+.new-hero p{color:#e2d3bf!important}
+.new-hero .small{color:#c5a986!important}
+.new-hero .pill{border:1px solid #bd8e4980;background:#ffffff0a!important;color:#eec16b!important;letter-spacing:.13em;font-size:.7rem}
+.new-hero .hero-image img{height:560px;object-fit:cover;filter:saturate(.82) contrast(1.07)}
+.new-hero .hero-image{padding:12px;border:1px solid #a9824766;border-radius:28px;background:#ffffff08;box-shadow:0 32px 80px #0006}
+.new-hero .hero-image:after{inset:12px;border-radius:21px}
+.new-hero .float-card{bottom:36px;left:-24px;background:#fff9ef;color:#2c1a0c;border-left:4px solid #d9a747}
+.new-hero .float-card small{color:#6c5947}
+.new-hero .btn-outline{color:#fff4dd!important;border-color:#ad895a!important;background:#ffffff0c!important}
+.new-hero .btn-outline:hover{background:#ffffff1f!important}
+.signature-strip{background:#f2e4c9;border-top:1px solid #d6b77c;border-bottom:1px solid #d6b77c;padding:27px 0}
+.signature-inner{display:grid;grid-template-columns:1.05fr 1.25fr auto;align-items:center;gap:32px}
+.signature-kicker{display:block;font-size:.64rem;letter-spacing:.2em;font-weight:800;color:#8b602c;margin-bottom:5px}
+.signature-inner strong{display:block;font:700 clamp(1.25rem,2vw,1.65rem) Manrope,sans-serif;letter-spacing:-.04em;color:#25170e}
+.signature-inner p{margin:0;color:#574431;font-size:.93rem;line-height:1.6}
+.signature-inner a{font-size:.87rem;font-weight:800;white-space:nowrap;border-bottom:2px solid #9b6c30;padding-bottom:4px;color:#3a2614}
+.audience-section{background:#fffaf1}
+.audience-grid{gap:24px}
+.audience-card{border:1px solid #dbc398;border-radius:24px;overflow:hidden;box-shadow:0 18px 40px #25160c12}
+.audience-content{padding:32px!important}
+.section-white .service-card{background:#fffdf8}
+@media(max-width:1050px){.signature-inner{grid-template-columns:1fr 1.3fr}.signature-inner a{grid-column:1/-1;justify-self:start}}
+@media(max-width:850px){.new-hero{padding:60px 0 72px!important}.new-hero .hero-image img{height:400px}.new-hero .hero-image{margin:0 8px}.signature-inner{grid-template-columns:1fr;gap:12px}.signature-inner a{grid-column:auto}}
+@media(max-width:550px){.nav .brand img{width:76px!important;height:76px!important}.nav-inner{min-height:82px!important}.nav-links{top:82px!important}.new-hero h1{font-size:clamp(2.65rem,10vw,3.65rem)!important}.new-hero .hero-image img{height:310px}.new-hero .float-card{left:0;bottom:20px;max-width:90%;font-size:.88rem;padding:13px 15px}.signature-strip{padding:24px 0}.signature-inner strong{font-size:1.32rem}}
+@media(prefers-reduced-motion:reduce){.new-hero .hero-image,.signature-inner{animation:none!important}}
