@@ -111,3 +111,25 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
 @media(max-width:1080px) and (min-width:851px){.nav-links{gap:9px;font-size:.84rem}.nav-links>.btn{padding:10px 12px}.nav .brand img{width:62px!important;height:62px!important}}
 @media(max-width:850px){.nav-links{z-index:101;max-height:calc(100vh - 76px);overflow:auto}.nav-links>a:not(.btn){padding:8px 0}.new-hero .hero-actions{align-items:stretch}.new-hero .hero-actions .btn{width:100%}.section .split>img{max-height:390px}}
 @media(max-width:550px){.new-hero{padding:48px 0 62px}.new-hero h1{font-size:clamp(2.5rem,11vw,3.5rem);line-height:1.1}.new-hero p{font-size:1rem}.section{padding:60px 0}.page-hero{padding:56px 0}.audience-photo{height:220px}.footer{padding-top:45px}}
+
+
+/* Editorial details: a more distinctive, less templated Voxica */
+.new-hero h1{letter-spacing:-.055em;text-wrap:balance}
+.new-hero .hero-grid>div:first-child{max-width:670px}
+.new-hero .hero-grid>div:first-child>p:not(.small){max-width:590px;line-height:1.75}
+.new-hero .hero-image{position:relative}
+.new-hero .hero-image:after{content:"";position:absolute;inset:0;border:1px solid #e9c77944;border-radius:22px;pointer-events:none}
+.audience-card{transition:transform .25s ease,box-shadow .25s ease}
+.audience-card:hover{transform:translateY(-4px);box-shadow:0 24px 55px #24180e24}
+.audience-content h3{letter-spacing:-.025em;line-height:1.23}
+.section-heading h2,.split h2,.cta h2{letter-spacing:-.035em;text-wrap:balance}
+.service-card{transition:transform .25s ease,border-color .25s ease}
+.service-card:hover{transform:translateY(-3px);border-color:#d3b36a}
+.service-card p{line-height:1.75}
+.section-heading p{max-width:680px;line-height:1.7}
+.page-hero h1{max-width:900px;letter-spacing:-.045em;text-wrap:balance}
+.page-hero p{max-width:730px;line-height:1.7}
+.btn{transition:transform .18s ease,background-color .18s ease,box-shadow .18s ease}
+.btn:hover{transform:translateY(-2px)}
+.footer a:not(.brand):hover{text-decoration:underline;text-underline-offset:4px}
+@media(prefers-reduced-motion:reduce){.audience-card,.service-card,.btn{transition:none!important;transform:none!important}}
