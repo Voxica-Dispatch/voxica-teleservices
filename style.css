@@ -58,3 +58,17 @@ body{background:var(--cream)}h1,h2,h3,h4{color:var(--navy)}.nav{background:#140f
 .faq-list a{text-decoration:underline;text-underline-offset:3px;color:#835d00}
 .nav-links .arise-nav-link{font-size:.9rem;color:#f1c976;border-left:1px solid #66502c;padding-left:14px}
 @media(max-width:850px){.nav-links .arise-nav-link{border-left:0;border-top:1px solid #66502c;padding:12px 0 0}.page-hero{padding:65px 0}}
+
+
+/* Compact mobile brand: logo should never dominate the header */
+.nav-inner{min-height:74px}
+.nav .brand{display:inline-flex;align-items:center;max-width:150px;line-height:0}
+.nav .brand img{display:block!important;width:142px!important;height:52px!important;max-width:100%!important;max-height:52px!important;aspect-ratio:auto!important;object-fit:contain!important;object-position:left center!important}
+.menu-toggle{line-height:1}
+@media(max-width:550px){
+.nav-inner{min-height:68px!important}
+.nav .brand{max-width:132px!important}
+.nav .brand img{width:130px!important;height:48px!important;max-height:48px!important}
+.nav-links{top:68px!important}
+.menu-toggle{font-size:1.7rem}
+}
