@@ -84,3 +84,30 @@ body{background:var(--cream)}h1,h2,h3,h4{color:var(--navy)}.nav{background:#140f
 .consent-row{display:flex;gap:11px;align-items:flex-start;margin:18px 0 24px;font-size:.92rem;line-height:1.5;color:#554a3d}
 .consent-row input{width:19px;height:19px;flex:0 0 19px;margin-top:2px;accent-color:#b8890c}
 .consent-row a{color:#805b00;text-decoration:underline;text-underline-offset:3px}
+
+
+/* Voxica presentation polish */
+:root{--focus-ring:#f2b923}
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible,summary:focus-visible{outline:3px solid var(--focus-ring);outline-offset:4px}
+.nav{position:sticky;top:0;z-index:100;box-shadow:0 8px 25px #00000018}
+.nav-inner{gap:18px}
+.nav-links{gap:clamp(10px,1.5vw,25px);font-weight:700}
+.nav-links>a:not(.btn){white-space:nowrap}
+.nav-links>.btn{white-space:nowrap;padding:12px 18px}
+.hero-actions{display:flex;flex-wrap:wrap;gap:14px;align-items:center}
+.new-hero .hero-actions .btn{display:inline-flex;align-items:center;justify-content:center;min-height:56px;max-width:100%;font-size:.96rem;line-height:1.35;text-align:center;padding:15px 20px}
+.new-hero .hero-grid{align-items:center}
+.new-hero .hero-image img{border-radius:22px}
+.new-hero .small{margin-top:18px}
+.section-heading.center{margin-bottom:38px}
+.service-card,.audience-card{height:100%}
+.service-card{border:1px solid #e7d9bc;border-radius:18px;box-shadow:0 8px 24px #2c211009}
+.section .split{align-items:center}
+.section .split>img{width:100%;object-fit:cover;border-radius:22px;box-shadow:0 16px 38px #21170d1a}
+.footer{padding-top:58px}
+.footer .brand img{object-fit:contain}
+.form-card{max-width:900px;margin:0 auto}
+.form-card input:not([type="checkbox"]),.form-card select,.form-card textarea{font-size:16px}
+@media(max-width:1080px) and (min-width:851px){.nav-links{gap:9px;font-size:.84rem}.nav-links>.btn{padding:10px 12px}.nav .brand img{width:62px!important;height:62px!important}}
+@media(max-width:850px){.nav-links{z-index:101;max-height:calc(100vh - 76px);overflow:auto}.nav-links>a:not(.btn){padding:8px 0}.new-hero .hero-actions{align-items:stretch}.new-hero .hero-actions .btn{width:100%}.section .split>img{max-height:390px}}
+@media(max-width:550px){.new-hero{padding:48px 0 62px}.new-hero h1{font-size:clamp(2.5rem,11vw,3.5rem);line-height:1.1}.new-hero p{font-size:1rem}.section{padding:60px 0}.page-hero{padding:56px 0}.audience-photo{height:220px}.footer{padding-top:45px}}
