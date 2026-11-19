@@ -79,3 +79,8 @@ body{background:var(--cream)}h1,h2,h3,h4{color:var(--navy)}.nav{background:#140f
 .nav .brand img{width:70px!important;height:70px!important;max-width:none!important;max-height:none!important;aspect-ratio:1/1!important;object-fit:contain!important}
 .footer .brand img{width:130px!important;height:130px!important;max-height:none!important;aspect-ratio:1/1!important;object-fit:contain!important}
 @media(max-width:550px){.nav-inner{min-height:76px!important}.nav .brand img{width:70px!important;height:70px!important;max-height:none!important}.nav-links{top:76px!important}}
+
+
+.consent-row{display:flex;gap:11px;align-items:flex-start;margin:18px 0 24px;font-size:.92rem;line-height:1.5;color:#554a3d}
+.consent-row input{width:19px;height:19px;flex:0 0 19px;margin-top:2px;accent-color:#b8890c}
+.consent-row a{color:#805b00;text-decoration:underline;text-underline-offset:3px}
