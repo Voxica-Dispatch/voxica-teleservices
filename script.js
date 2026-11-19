@@ -1,1 +1,8 @@
 const toggle=document.querySelector('.menu-toggle');if(toggle)toggle.addEventListener('click',()=>{const links=document.querySelector('.nav-links');links.classList.toggle('open');toggle.setAttribute('aria-expanded',links.classList.contains('open'))});document.querySelectorAll('.nav-links a').forEach(a=>a.addEventListener('click',()=>document.querySelector('.nav-links')?.classList.remove('open')));document.querySelectorAll('form[data-mailto]').forEach(form=>form.addEventListener('submit',e=>{e.preventDefault();if(!form.reportValidity())return;const data=new FormData(form);const lines=[...data.entries()].map(([k,v])=>k+': '+v);const recipient=form.dataset.mailto;if(!recipient||recipient.endsWith('@example.com')){document.querySelector('.form-status').textContent='Online submissions are not enabled yet. Please return when Voxica has activated this form.';return}location.href='mailto:'+recipient+'?subject='+encodeURIComponent(form.dataset.subject||'Voxica inquiry')+'&body='+encodeURIComponent(lines.join('\n'))}))
+
+/* Animate content only when visible; keep content accessible without JS */
+if('IntersectionObserver' in window && window.matchMedia('(prefers-reduced-motion: no-preference)').matches){
+const items=[...document.querySelectorAll('.section-heading,.audience-card,.service-card,.split>div,.step,.cta')];
+const observer=new IntersectionObserver(entries=>{entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('is-visible');observer.unobserve(entry.target)}})},{threshold:.08,rootMargin:'0px 0px -25px 0px'});
+items.forEach(el=>{el.classList.add('reveal-ready');observer.observe(el)});
+}
