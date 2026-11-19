@@ -72,3 +72,10 @@ body{background:var(--cream)}h1,h2,h3,h4{color:var(--navy)}.nav{background:#140f
 .nav-links{top:68px!important}
 .menu-toggle{font-size:1.7rem}
 }
+
+
+/* Official square logo: preserve the source artwork exactly */
+.nav .brand{max-width:none!important}
+.nav .brand img{width:70px!important;height:70px!important;max-width:none!important;max-height:none!important;aspect-ratio:1/1!important;object-fit:contain!important}
+.footer .brand img{width:130px!important;height:130px!important;max-height:none!important;aspect-ratio:1/1!important;object-fit:contain!important}
+@media(max-width:550px){.nav-inner{min-height:76px!important}.nav .brand img{width:70px!important;height:70px!important;max-height:none!important}.nav-links{top:76px!important}}
