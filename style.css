@@ -198,3 +198,9 @@ html{scroll-behavior:smooth}
 .channel-options label{transition:border-color .16s ease,background-color .16s ease}
 .jotform-embed-wrap iframe{max-width:100%;overflow:hidden}
 @media(max-width:650px){.section-heading h2{overflow-wrap:break-word}.form-card{max-width:100%}}
+
+/* Customer support plan cards */
+.voxica-plans .service-card{display:flex;flex-direction:column;align-items:flex-start;gap:12px}
+.voxica-plans .service-card h3,.voxica-plans .service-card p{margin:0}
+.voxica-plans .service-card .btn{margin-top:auto}
+.plan-disclaimer{max-width:940px;margin:24px auto 0;text-align:center;color:#695b4b;font-size:.87rem;line-height:1.7}
